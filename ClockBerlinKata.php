@@ -6,18 +6,24 @@ class ClockBerlinKata
     public function singleMinute($value):string
     {
         if($value == 0){
-            return "";
+            return 'OOOO';
         }
         else if($value == 2){
-            return 'YY';
+            return 'YYOO';
         }
         else if($value == 3){
-            return 'YYY';
+            return 'YYYO';
         }
         else if($value == 4){
             return 'YYYY';
         }
 
-        return 'Y' ;
+        return 'YOOO' ;
     }
+
+    public function rowMinute($value):string
+    {
+        return 'OOOOOOOOOOOO';
+    }
+
 }

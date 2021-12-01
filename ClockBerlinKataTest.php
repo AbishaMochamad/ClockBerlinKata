@@ -17,7 +17,7 @@ class ClockBerlinKataTest extends TestCase
         $actual = $clockBerlinKata->singleMinute(0);
 
         //Assert
-        $this->assertEquals("",$actual);
+        $this->assertEquals("OOOO",$actual);
 
 
     }
@@ -32,7 +32,7 @@ class ClockBerlinKataTest extends TestCase
         $actual = $clockBerlinKata->singleMinute(1);
 
         //Assert
-        $this->assertEquals("Y", $actual);
+        $this->assertEquals("YOOO", $actual);
 
     }
 
@@ -45,7 +45,7 @@ class ClockBerlinKataTest extends TestCase
         $actual = $clockBerlinKata->singleMinute(2);
 
         //Assert
-        $this->assertEquals("YY",$actual);
+        $this->assertEquals("YYOO",$actual);
 
     }
 
@@ -58,7 +58,7 @@ class ClockBerlinKataTest extends TestCase
         $actual = $clockBerlinKata->singleMinute(3);
 
         //Assert
-        $this->assertEquals("YYY", $actual);
+        $this->assertEquals("YYYO", $actual);
 
 
     }
@@ -74,7 +74,18 @@ class ClockBerlinKataTest extends TestCase
         //Assert
         $this->assertEquals("YYYY",$actual);
 
+    }
 
+    public function testRowMinute0ShouldReturn0():void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
+
+        //Act
+        $actual = $clockBerlinKata->rowMinute(0);
+
+        //Assert
+        $this->assertEquals("OOOOOOOOOOOO",$actual);
 
     }
 
