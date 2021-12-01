@@ -14,6 +14,9 @@ class ClockBerlinKata
         else if($value == 3){
             return 'YYY';
         }
+        else if($value == 4){
+            return 'YYYY';
+        }
 
         return 'Y' ;
     }
