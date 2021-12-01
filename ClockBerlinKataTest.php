@@ -7,6 +7,22 @@ require 'ClockBerlinKata.php';
 
 class ClockBerlinKataTest extends TestCase
 {
+
+    public function testSingleMinute0ShouldReturn0():void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
+
+        //Act
+        $actual = $clockBerlinKata->singleMinute(0);
+
+        //Assert
+        $this->assertEquals("",$actual);
+
+
+    }
+
+
     public function testSingleMinute1ShouldRetunY():void
     {
         //Arrange
