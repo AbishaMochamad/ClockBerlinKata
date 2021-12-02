@@ -89,8 +89,9 @@ class ClockBerlinKata
                 return $this->singleMinute(0) . " " . $this->rowMinute($value);
             }
             else{
-                $reste = $value-($value-($value%5)) ;
-                return $this->singleMinute($reste) . " " . $this->rowMinute($value);
+                $rest = $value-($value-($value%5)) ;
+                $value = $value-$value%5;
+                return $this->singleMinute($rest) . " " . $this->rowMinute($value);
             }
         }
 
@@ -163,8 +164,9 @@ class ClockBerlinKata
                 return $this->singleHour(0) . " " . $this->rowHour($value);
             }
             else{
-                $reste = $value - ($value-($value%5));
-                return $this->singleHour($reste) . " " . $this->rowHour($value);
+                $rest = $value - ($value-($value%5));
+                $value = $value-$value%5;
+                return $this->singleHour($rest) . " " . $this->rowHour($value);
             }
 
         }
