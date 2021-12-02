@@ -266,8 +266,18 @@ class ClockBerlinKataTest extends TestCase
         //Assert
         $this->assertEquals("Y", $actual);
 
+    }
 
+    public function testSecondOddShouldReturnO():void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
 
+        //Act
+        $actual = $clockBerlinKata->second(1);
+
+        //Assert
+        $this->assertEquals("O", $actual);
     }
 
 

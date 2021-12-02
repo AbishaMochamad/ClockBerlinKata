@@ -176,7 +176,7 @@ class ClockBerlinKata
 
     public function second($value):string
     {
-
+        if($value%2!=0) return "O";
         return "Y";
 
     }
