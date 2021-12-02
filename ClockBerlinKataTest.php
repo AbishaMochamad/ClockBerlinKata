@@ -190,6 +190,18 @@ class ClockBerlinKataTest extends TestCase
         $this->assertEquals("OOOO",$actual);
     }
 
+    public function testSingleHour3ShouldReturnYYYO(): void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
+
+        //Act
+        $actual = $clockBerlinKata->singleHour(3);
+
+        //Assert
+        $this->assertEquals("YYYO",$actual);
+
+    }
 
 
 

@@ -101,14 +101,14 @@ class ClockBerlinKata
     {
 
 
-        return "OOOO";
+        return $this->constructSingleHour($value);
     }
 
     /**
      * @param $value
      * @return string
      */
-    public function contructSingleHour($value): string
+    public function constructSingleHour($value): string
     {
         $singleHour = "";
         for($i=0;$i<4;$i++){
