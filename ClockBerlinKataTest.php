@@ -89,5 +89,16 @@ class ClockBerlinKataTest extends TestCase
 
     }
 
+    public function testRowMinute5ShouldReturnY():void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
+
+        //Act
+        $actual = $clockBerlinKata->rowMinute(5);
+
+        //Assert
+        $this->assertEquals("YOOOOOOOOOOO", $actual);
+    }
 
 }
