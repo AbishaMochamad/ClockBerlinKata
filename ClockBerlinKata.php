@@ -29,6 +29,10 @@ class ClockBerlinKata
         if($value == 10){
             return "YYOOOOOOOOOO";
         }
+        if($value == 15){
+            return "YYROOOOOOOOO";
+        }
+
         return 'OOOOOOOOOOOO';
     }
 
