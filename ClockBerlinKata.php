@@ -153,5 +153,23 @@ class ClockBerlinKata
         return $rowHour;
     }
 
+    public function hour($value):string
+    {
+        if($value<4){
+            return $this->singleHour(4) . " " . $this->rowHour(0);
+        }
+        else if($value>4){
+            if($value%5==0){
+                return $this->singleHour(0) . " " . $this->rowHour($value);
+            }
+            else{
+                $reste = $value - ($value-($value%5));
+                return $this->singleHour($reste) . " " . $this->rowHour($value);
+            }
+
+        }
+
+        return "";
+    }
 
 }

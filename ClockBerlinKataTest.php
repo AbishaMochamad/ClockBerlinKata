@@ -229,5 +229,17 @@ class ClockBerlinKataTest extends TestCase
 
     }
 
+    public function testHour23ShouldReturnRRRO_RRRR():void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
+
+        //Act
+        $actual = $clockBerlinKata->hour(23);
+
+        //Assert
+        $this->assertEquals("RRRO RRRR", $actual);
+
+    }
 
 }
