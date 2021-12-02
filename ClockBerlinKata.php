@@ -174,4 +174,11 @@ class ClockBerlinKata
         return "";
     }
 
+    public function second($value):string
+    {
+
+        return "Y";
+
+    }
+
 }
