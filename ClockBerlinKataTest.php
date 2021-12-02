@@ -164,6 +164,17 @@ class ClockBerlinKataTest extends TestCase
 
     }
 
+    public function testMinute33ShouldReturnYYYO_YYRYYROOOOO():void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
 
+        //Act
+        $actual = $clockBerlinKata->minutes(33);
+
+        //Assert
+        $this->assertEquals("YYYO YYRYYROOOOO", $actual);
+
+    }
 
 }
