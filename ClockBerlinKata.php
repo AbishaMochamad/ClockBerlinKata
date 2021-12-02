@@ -30,11 +30,12 @@ class ClockBerlinKata
         for($i=0; $i<4;$i++){
             if($value>0){
                 $singleMinute= $singleMinute . "Y";
+                $value--;
             }
             else{
                 $singleMinute = $singleMinute . "O";
             }
-            $value--;
+
         }
 
         return $singleMinute;
@@ -102,6 +103,27 @@ class ClockBerlinKata
 
         return "OOOO";
     }
+
+    /**
+     * @param $value
+     * @return string
+     */
+    public function contructSingleHour($value): string
+    {
+        $singleHour = "";
+        for($i=0;$i<4;$i++){
+            if($value>0){
+                $singleHour = $singleHour . "Y";
+                $value--;
+            }
+            else{
+                $singleHour = $singleHour . "O";
+            }
+        }
+
+        return $singleHour;
+    }
+
 
 
 
