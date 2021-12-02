@@ -80,9 +80,23 @@ class ClockBerlinKata
 
     public function minutes($value): string
     {
-        if($value<4) return $this->singleMinute($value);
+        if($value<4){
+            return $this->singleMinute($value) . " " . $this->rowMinute(0);
+        }
+        if($value>4){
+            if($value%5==0){
+                return $this->singleMinute(0) . " " . $this->rowMinute($value);
+            }
+            else{
+                $reste = $value-($value-($value%5)) ;
+                return $this->singleMinute($reste) . " " . $this->rowMinute($value);
+            }
+        }
 
         return $this->rowMinute($value);
     }
+
+
+
 
 }
