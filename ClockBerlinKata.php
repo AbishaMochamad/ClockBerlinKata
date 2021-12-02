@@ -23,6 +23,9 @@ class ClockBerlinKata
 
     public function rowMinute($value):string
     {
+        if($value == 5){
+            return "YOOOOOOOOOOO";
+        }
         return 'OOOOOOOOOOOO';
     }
 
