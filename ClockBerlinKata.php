@@ -178,7 +178,11 @@ class ClockBerlinKata
     {
         if($value%2!=0) return "O";
         return "Y";
+    }
 
+    public function clock($hour,$minute,$second):string
+    {
+        return "\n " . $this->hour($hour) . "\n" . $this->minutes($minute) . "\n" . $this->second($second);
     }
 
 }

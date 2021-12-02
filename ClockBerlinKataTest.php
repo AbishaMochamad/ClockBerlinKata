@@ -280,5 +280,21 @@ class ClockBerlinKataTest extends TestCase
         $this->assertEquals("O", $actual);
     }
 
+    public function testClock():void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
+
+
+        //Act
+        $actual = $clockBerlinKata->clock(12,53,10);
+
+        //Assert
+        self::assertEquals(1,1);
+
+        var_dump($actual);
+
+    }
+
 
 }
