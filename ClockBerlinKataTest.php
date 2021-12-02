@@ -177,4 +177,20 @@ class ClockBerlinKataTest extends TestCase
 
     }
 
+
+    public function testSingleHour0ShouldReturnO():void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
+
+        //Act
+        $actual = $clockBerlinKata->singleHour(0);
+
+        //Assert
+        $this->assertEquals("OOOO",$actual);
+    }
+
+
+
+
 }

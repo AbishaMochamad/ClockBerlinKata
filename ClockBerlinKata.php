@@ -96,6 +96,13 @@ class ClockBerlinKata
         return $this->rowMinute($value);
     }
 
+    public function singleHour($value): string
+    {
+
+
+        return "OOOO";
+    }
+
 
 
 
