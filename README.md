@@ -10,4 +10,4 @@ Single Hour -> Hour from 1 to 4, represent by R. It turns on every Hour.
 Row Hour -> On every 5 hour, it turns on. Represent by R
 Second -> Represent by Y id pair and O id odd.
 
-If it's not on, it represents by O/
+If it's not on, it represents by O.
