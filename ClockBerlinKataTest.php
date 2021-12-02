@@ -190,7 +190,7 @@ class ClockBerlinKataTest extends TestCase
         $this->assertEquals("OOOO",$actual);
     }
 
-    public function testSingleHour3ShouldReturnYYYO(): void
+    public function testSingleHour3ShouldReturnRRRO(): void
     {
         //Arrange
         $clockBerlinKata = new ClockBerlinKata();
@@ -199,11 +199,11 @@ class ClockBerlinKataTest extends TestCase
         $actual = $clockBerlinKata->singleHour(3);
 
         //Assert
-        $this->assertEquals("YYYO",$actual);
+        $this->assertEquals("RRRO",$actual);
 
     }
 
-    public function testRowHour5ShouldReturnY(): void
+    public function testRowHour5ShouldReturnROOO(): void
     {
         //Arrange
         $clockBerlinKata = new ClockBerlinKata();
@@ -216,7 +216,18 @@ class ClockBerlinKataTest extends TestCase
 
     }
 
+    public function testRowHour20ShouldReturnRRRR():void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
 
+        //Act
+        $actual = $clockBerlinKata->rowHour(20);
+
+        //Assert
+        $this->assertEquals("RRRR",$actual);
+
+    }
 
 
 }

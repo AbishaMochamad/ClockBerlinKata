@@ -113,7 +113,7 @@ class ClockBerlinKata
         $singleHour = "";
         for($i=0;$i<4;$i++){
             if($value>0){
-                $singleHour = $singleHour . "Y";
+                $singleHour = $singleHour . "R";
                 $value--;
             }
             else{
@@ -121,16 +121,37 @@ class ClockBerlinKata
             }
         }
 
+
         return $singleHour;
     }
 
     public function rowHour($value): string
     {
 
-        return "ROOO";
+        return $this->constructRowHour($value);
     }
 
+    /**
+     * @param $value
+     * @return string
+     */
+    public function constructRowHour($value):string
+    {
+        $rowHour = "";
+        $nbrHour = $value/5;
+        for($i=0; $i<4; $i++){
+            if($nbrHour>0){
+                $rowHour = $rowHour .  "R";
+                $nbrHour--;
+            }
+            else{
+                $rowHour = $rowHour . "O";
+            }
 
+        }
+
+        return $rowHour;
+    }
 
 
 }
