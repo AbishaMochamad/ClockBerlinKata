@@ -203,6 +203,20 @@ class ClockBerlinKataTest extends TestCase
 
     }
 
+    public function testRowHour5ShouldReturnY(): void
+    {
+        //Arrange
+        $clockBerlinKata = new ClockBerlinKata();
+
+        //Act
+        $actual = $clockBerlinKata->rowHour(5);
+
+        //Assert
+        $this->assertEquals("ROOO", $actual);
+
+    }
+
+
 
 
 }

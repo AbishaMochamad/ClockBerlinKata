@@ -124,6 +124,11 @@ class ClockBerlinKata
         return $singleHour;
     }
 
+    public function rowHour($value): string
+    {
+
+        return "ROOO";
+    }
 
 
 
